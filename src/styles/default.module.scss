@@ -1,0 +1,11 @@
+$primary-color: #003460;
+$secondary-color: #979cb3;
+$active-color: #ef7a15;
+$omega-color: rgba(250, 247, 242, 0.99);
+
+:export {
+    primaryColor: $primary-color;
+    secondaryColor: $secondary-color;
+    activeColor: $active-color;
+    omegaColor: $omega-color;
+}

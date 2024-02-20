@@ -1,0 +1,32 @@
+$primary-color: #003460;
+$secondary-color: #979cb3;
+$active-color: #ef7a15;
+$omega-color: rgba(250, 247, 242, 0.99);
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    $colors: (
+        'primary': (
+            'base': $active-color,
+        ),
+    ),
+    $bg-color: (
+        '': $secondary-color,
+        'overlay': $secondary-color,
+        'page': $secondary-color
+    )
+);
+
+:export {
+    primaryColor: $primary-color;
+    secondaryColor: $secondary-color;
+    activeColor: $active-color;
+    omegaColor: $omega-color;
+}
+//
+//@use 'default.module' as def;
+//$primary-color: def.$primary-color;
+//$secondary-color: def.$secondary-color;
+//$active-color: def.$active-color;
+//$omega-color: def.$omega-color;
+
+
+//@use 'element-plus/theme-chalk/dark/css-vars.css' as *;

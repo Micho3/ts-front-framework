@@ -1,0 +1,52 @@
+//@use 'src/styles/index.module' as *;
+// common
+// main container
+#rootContainer {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    // header
+    #frame-header {
+        background: linear-gradient(232deg, $secondary-color 0%, $primary-color 100%), url("~/assets/images/bg.png") no-repeat;
+        background-blend-mode: color-burn;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //width: 100%;
+        .title-logo {
+            height: 60px;
+        }
+        .user-option {
+            color: $active-color;
+            .el-divider {
+                border-color: $active-color;
+            }
+        }
+    }
+
+    #contentContainer {
+        position: relative;
+        top:0;
+        bottom: 0;
+        height: 100%;
+        // nav
+        #frame-nav {
+            //background: linear-gradient(180deg, $secondary-color 0%, $primary-color 100%);
+            background: #fff;
+            position: relative;
+            bottom: 0;
+            color: #fff;
+            .is-active {
+                background: linear-gradient(232deg, $secondary-color 0%, $primary-color 100%), url("~/assets/images/bg.png") no-repeat;;
+                background-blend-mode: color-burn;
+                background-size: 100% 100%;
+                color: $active-color;
+                .el-sub-menu__title {
+                    color: $active-color;
+                }
+            }
+        }
+    }
+}
